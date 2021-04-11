@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chennai
+    </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+ <body class="listbody">
+   <div id="myDIV">
+  
+        <ul class="listul">
+        <li class="ll"><a class ="a active" href="index.html" target="desty">HOME</a></li>
+		<li class="ll"><a class="a" href="index.html#about" target="desty">ABOUT</a></li>
+        <li class="ll"><a class="a" href="index.html#edu" target="desty">EDUCATION</a></li>
+		<li class="ll"><a class="a" href="index.html#skill"target="desty">SKILLSET</a></li>
+		<li class="ll"><a class="a" href="index.html#exp"target="desty">EXPERIENCE</a></li>
+		<li class="ll"><a class="a" href="index.html#prj"target="desty">PROJECTS</a></li>
+		<li class="ll"><a class="a" href="index.html#ach" target="desty">ACHIEVEMENTS</a></li>
+		<li class="ll"><a class="a" href="index.html#con" target="desty">CONTACT</a></li>
+        </ul>
+		
+    </div>
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var alink = header.getElementsByClassName("a");
+for (var i = 0; i < alink.length; i++) {
+  alink[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+</body>
+</html>
